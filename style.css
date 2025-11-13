@@ -1,0 +1,378 @@
+/* Clean Girl Aesthetic - Complete Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #F5F1E8;
+    --beige: #E8DCC4;
+    --tan: #C9B896;
+    --warm-gray: #A89F91;
+    --charcoal: #3D3D3D;
+    --soft-black: #2C2C2C;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    padding: 50px 40px 30px;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: var(--soft-black);
+}
+
+.subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--white);
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+nav a {
+    color: var(--charcoal);
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--tan);
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* Era Backgrounds */
+.era-background {
+    padding: 60px 0;
+}
+
+.platonic-bg {
+    background: var(--cream);
+}
+
+.victorian-bg {
+    background: var(--white);
+}
+
+.essay-bg {
+    background: var(--cream);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--beige) 0%, var(--tan) 100%);
+    color: var(--soft-black);
+    padding: 80px 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    opacity: 0.85;
+    line-height: 2;
+    font-weight: 300;
+}
+
+/* Content Sections */
+.section {
+    background: var(--white);
+    padding: 50px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.period-section {
+    background: linear-gradient(135deg, var(--beige) 0%, var(--tan) 100%);
+    padding: 60px 50px;
+    margin-bottom: 50px;
+}
+
+.victorian-period {
+    background: linear-gradient(135deg, #D4C5B0 0%, #B8A588 50%, #A89F91 100%);
+}
+
+/* Typography */
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--soft-black);
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--soft-black);
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--charcoal);
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 300;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    background: var(--white);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    background-color: var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    color: var(--warm-gray);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.image-placeholder strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+}
+
+.image-placeholder p {
+    margin-bottom: 8px;
+}
+
+.gallery-content {
+    padding: 35px;
+}
+
+.gallery-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.meta-info {
+    font-size: 11px;
+    color: var(--warm-gray);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.gallery-content p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Bibliography */
+.bibliography {
+    background: var(--cream);
+    padding: 40px;
+    border-left: 2px solid var(--tan);
+    margin-top: 40px;
+}
+
+.bib-entry {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.bib-entry strong {
+    font-weight: 400;
+    color: var(--charcoal);
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    color: var(--warm-gray);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Links */
+a {
+    color: var(--tan);
+    transition: color 0.3s ease;
+}
+
+a:not(nav a):hover {
+    color: var(--warm-gray);
+}
+
+/* Text Styling */
+strong {
+    font-weight: 500;
+    color: var(--soft-black);
+}
+
+em {
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { 
+        font-size: 36px; 
+    }
+    
+    h2 { 
+        font-size: 34px; 
+    }
+    
+    h3 { 
+        font-size: 28px; 
+    }
+    
+    .hero-section { 
+        padding: 60px 30px; 
+    }
+    
+    .hero-section h2 { 
+        font-size: 38px; 
+    }
+    
+    .container { 
+        padding: 40px 20px; 
+    }
+    
+    .section { 
+        padding: 30px 20px; 
+    }
+    
+    .period-section {
+        padding: 40px 30px;
+    }
+    
+    .gallery { 
+        grid-template-columns: 1fr; 
+    }
+    
+    nav a { 
+        display: block; 
+        padding: 15px; 
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .gallery-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    .hero-section h2 {
+        font-size: 32px;
+    }
+    
+    header {
+        padding: 30px 20px 20px;
+    }
+}
