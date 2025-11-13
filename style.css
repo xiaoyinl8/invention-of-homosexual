@@ -376,3 +376,8 @@ em {
         padding: 30px 20px 20px;
     }
 }
+
+nav a.active {
+    color: var(--tan);
+    font-weight: 500;
+}
