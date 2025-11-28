@@ -380,3 +380,19 @@ nav a.active {
     color: var(--tan);
     font-weight: 500;
 }
+
+.source-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #8b6f47;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.source-link:hover {
+    background-color: #6d5636;
+}
