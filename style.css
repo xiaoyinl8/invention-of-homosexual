@@ -194,6 +194,19 @@ html {
     border: 2px solid #fff !important;
 }
 
+.high-contrast .bibliography {
+    background: #1a1a1a !important;
+    border: 2px solid #fff !important;
+}
+
+.high-contrast .bib-entry {
+    color: #fff !important;
+}
+
+.high-contrast .bib-entry strong {
+    color: #fff !important;
+}
+
 .high-contrast .gallery-image {
     background-color: #2a2a2a !important;
     border-bottom: 2px solid #fff !important;
