@@ -5,92 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Essay & Bibliography | The Invention of the Homosexual</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-accessible.css">
 </head>
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Accessibility Controls Bar -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Accessibility controls">
+        <div class="container">
+            <button id="contrast-toggle" aria-label="Toggle high contrast mode" title="Toggle high contrast mode">
+                <span aria-hidden="true">◐</span> High Contrast
+            </button>
+            <div class="font-controls">
+                <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">A-</button>
+                <button id="reset-font" aria-label="Reset font size" title="Reset font size">A</button>
+                <button id="increase-font" aria-label="Increase font size" title="Increase font size">A+</button>
+            </div>
+            <button id="read-page-btn" aria-label="Read entire page aloud" title="Read entire page aloud">
+                <span aria-hidden="true">🔊</span> Read Page
+            </button>
+        </div>
+    </div>
+
     <header>
         <h1>The Invention of the Homosexual</h1>
         <p class="subtitle">From Platonic Eros to Medical Pathology</p>
     </header>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="platonic-era.html">The Platonic Era</a>
         <a href="victorian-era.html">The Victorian Era</a>
-        <a href="essay.html" class="active">Essay & Bibliography</a>
+        <a href="essay.html" class="active" aria-current="page">Essay & Bibliography</a>
     </nav>
 
-    <div class="container">
-        <div class="section">
-            <h2>Thematic Essay</h2>
-            <p>The modern concept of “the homosexual” as a distinct type of person is not an eternal truth but a historical invention. This digital archive charts a profound transformation in Western thought, tracing the journey from a classical worldview that evaluated sexual acts to a modern paradigm that diagnoses sexual identity. By placing the philosophical works of Plato in direct conversation with the clinical texts of Victorian sexology, the project demonstrates how our most intimate categories of self are constructed, not discovered.</p>
+    <div class="container" id="main-content">
+        <section class="section" aria-labelledby="essay-heading">
+            <h2 id="essay-heading">Thematic Essay</h2>
+            <p>The modern concept of "the homosexual" as a distinct type of person is not an eternal truth but a historical invention. This digital archive charts a profound transformation in Western thought, tracing the journey from a classical worldview that evaluated sexual acts to a modern paradigm that diagnoses sexual identity. By placing the philosophical works of Plato in direct conversation with the clinical texts of Victorian sexology, the project demonstrates how our most intimate categories of self are constructed, not discovered.</p>
             
-            <p>In ancient Athens, as evidenced by Plato’s <em>Symposium</em> and the visual culture preserved on Greek pottery, same-sex desire between men was understood primarily through frameworks of ethics, pedagogy, and social hierarchy. The <em>Symposium</em> celebrates the philosophical and social potential of male-male relationships, while the <em>Laws</em> condemns the same acts as “unnatural” for their lack of procreative utility. Crucially, both texts operate within the same fundamental paradigm: they debate the virtue or vice of specific behaviors, not the innate nature of the individuals performing them. As Kenneth Dover’s research confirms, these relationships were structured by social roles like age and status, not by a concept of fixed orientation. A man’s participation in a pederastic relationship did not define his essential identity, but was one act among many evaluated within his public life. The ancient Greeks had no concept of “the homosexual” as a type of person; they recognized only acts that could be performed by any citizen, acts that were judged by their context, propriety, and social function.</p>
+            <p>In ancient Athens, as evidenced by Plato's <em>Symposium</em> and the visual culture preserved on Greek pottery, same-sex desire between men was understood primarily through frameworks of ethics, pedagogy, and social hierarchy. The <em>Symposium</em> celebrates the philosophical and social potential of male-male relationships, while the <em>Laws</em> condemns the same acts as "unnatural" for their lack of procreative utility. Crucially, both texts operate within the same fundamental paradigm: they debate the virtue or vice of specific behaviors, not the innate nature of the individuals performing them. As Kenneth Dover's research confirms, these relationships were structured by social roles like age and status, not by a concept of fixed orientation. A man's participation in a pederastic relationship did not define his essential identity, but was one act among many evaluated within his public life. The ancient Greeks had no concept of "the homosexual" as a type of person; they recognized only acts that could be performed by any citizen, acts that were judged by their context, propriety, and social function.</p>
             
-            <p>This understanding underwent a radical transformation in the late 19th century, when emerging medical and psychiatric discourses reconceptualized same-sex desire as the defining characteristic of a new human type. Michel Foucault identified this moment as marking the “birth” of the modern homosexual, arguing that what had once been understood as the sin of sodomy, a prohibited act that anyone might commit, was transformed into homosexuality, a psychological condition that revealed one's deepest identity. Sexologists like Richard von Krafft-Ebing and Havelock Ellis created elaborate taxonomies, classifying “sexual inverts” into types and subtypes based on supposed physical, psychological, and behavioral characteristics. Sigmund Freud, while rejecting degeneracy theories, further medicalized same-sex desire, framing it not as a vice but as a psychological condition stemming from arrested development. Even sympathetic voices like Ellis, who advocated for decriminalization, reinforced the notion that homosexuals constituted a distinct category of persons requiring scientific scrutiny and medical management.</p>
+            <p>This understanding underwent a radical transformation in the late 19th century, when emerging medical and psychiatric discourses reconceptualized same-sex desire as the defining characteristic of a new human type. Michel Foucault identified this moment as marking the "birth" of the modern homosexual, arguing that what had once been understood as the sin of sodomy, a prohibited act that anyone might commit, was transformed into homosexuality, a psychological condition that revealed one's deepest identity. Sexologists like Richard von Krafft-Ebing and Havelock Ellis created elaborate taxonomies, classifying "sexual inverts" into types and subtypes based on supposed physical, psychological, and behavioral characteristics. Sigmund Freud, while rejecting degeneracy theories, further medicalized same-sex desire, framing it not as a vice but as a psychological condition stemming from arrested development. Even sympathetic voices like Ellis, who advocated for decriminalization, reinforced the notion that homosexuals constituted a distinct category of persons requiring scientific scrutiny and medical management.</p>
             
-            <p>The archive’s visual and textual sources make this historical rupture tangible. Greek vase paintings show courtship scenes and symposium imagery that depict same-sex eros as an integrated aspect of civic and intellectual life, celebrated in visual culture without the stigma of abnormality. In contrast, Victorian medical illustrations, Freud’s psychosexual development paradigm, and sexological case studies present same-sex desire as a condition to be diagnosed, explained, and controlled by expert knowledge. The stark visual and rhetorical differences between these sources reveal how profoundly discourse shapes reality: the Greeks saw acts embedded in social relations, while Victorian sexologists saw identities embedded in bodies and psyches.</p>
+            <p>The archive's visual and textual sources make this historical rupture tangible. Greek vase paintings show courtship scenes and symposium imagery that depict same-sex eros as an integrated aspect of civic and intellectual life, celebrated in visual culture without the stigma of abnormality. In contrast, Victorian medical illustrations, Freud's psychosexual development paradigm, and sexological case studies present same-sex desire as a condition to be diagnosed, explained, and controlled by expert knowledge. The stark visual and rhetorical differences between these sources reveal how profoundly discourse shapes reality: the Greeks saw acts embedded in social relations, while Victorian sexologists saw identities embedded in bodies and psyches.</p>
             
-            <p><strong>This archive ultimately argues that our contemporary categories of sexual orientation—homosexual, heterosexual, bisexual, pansexual—are not discoveries of natural facts but historical inventions created through specific regimes of power and knowledge. By denaturalizing these categories, the website invites viewers to recognize the contingent nature of sexual identity itself and to question how current systems of classification continue to shape our understanding of desire, identity, and human possibility. In revealing the historicity of “the homosexual,” this archive opens space for imagining alternative frameworks for understanding human sexuality beyond the constraining logic of identity categories.</strong></p>
+            <p><strong>This archive ultimately argues that our contemporary categories of sexual orientation—homosexual, heterosexual, bisexual, pansexual—are not discoveries of natural facts but historical inventions created through specific regimes of power and knowledge. By denaturalizing these categories, the website invites viewers to recognize the contingent nature of sexual identity itself and to question how current systems of classification continue to shape our understanding of desire, identity, and human possibility. In revealing the historicity of "the homosexual," this archive opens space for imagining alternative frameworks for understanding human sexuality beyond the constraining logic of identity categories.</strong></p>
             
-        </div>
+        </section>
 
-        <div class="bibliography">
-            <h3>Annotated Bibliography</h3>
+        <section class="bibliography" aria-labelledby="bib-heading">
+            <h3 id="bib-heading">Annotated Bibliography</h3>
             
             <h4>Platonic Era Sources</h4>
             
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Plato. 1989. <em>Symposium</em>. Translated by Alexander Nehamas and Paul Woodruff. Indianapolis: Hackett Publishing Company.</strong><br><br>
                 Plato's Symposium, a 4th-century BCE dialogue set at an Athenian gathering, features speeches that celebrate Eros. Within this context, the text examines male-male relationships, framing them not as a distinct subcategory of behavior but as a fully integrated force within the civic and intellectual life of the polis. These relationships are depicted as crucial for philosophical mentorship, the transfer of knowledge, and the ascent toward transcendent beauty and wisdom.
-            </div>
+            </article>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Plato. 1997. <em>Laws, Book 8</em>. Translated by Trevor J. Saunders. Indianapolis: Hackett Publishing Company.</strong><br><br>
                 In Laws, Book 8, Plato adopts a legislative stance toward same-sex relations that contrasts with the praise in his Symposium. He condemns sexual acts between men as "unnatural", believing they should be outlawed because they do not produce children. However, Plato frames this as a matter of lawful versus unlawful acts, not as a question of identity or orientation.
-            </div>
+            </article>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Dover, Kenneth J. 1978. <em>Greek Homosexuality</em>. Cambridge: Harvard University Press.</strong><br><br>
                 Kenneth J. Dover's Greek Homosexuality offers a systematic analysis of same-sex relations in ancient Greece, focusing on the culturally sanctioned practice of pederasty. Dover's extensive discussion of visual evidence—particularly vase paintings—provides empirical foundation demonstrating that Greek same-sex practices were structured by age, status, and social function, not by a modern concept of fixed sexual orientation.
-            </div>
+            </article>
 
             <h4>Victorian Era Sources</h4>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Foucault, Michel. 1978. <em>The History of Sexuality, Volume 1: An Introduction</em>. Translated by Robert Hurley. New York: Pantheon Books.</strong><br><br>
                 Michel Foucault posits that sexuality is not an innate human quality but a concept constructed through history by systems of power and knowledge. He argues that the 19th century marked the creation of the "homosexual" as a specific kind of person, turning what were once considered mere acts of sodomy into a defining identity and subject of medical science.
-            </div>
+            </article>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Freud, Sigmund. 1905. <em>Three Essays on the Theory of Sexuality</em>. Translated by James Strachey. New York: Basic Books.</strong><br><br>
                 Freud positions sexuality as central to human psychology and identity formation. He analyzes homosexuality as a divergence in one's choice of sexual object, classifying it as a result of stalled psychosexual development. His model medicalizes same-sex desire by framing it as a psychological condition rooted in childhood experiences and family dynamics.
-            </div>
+            </article>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Ellis, Havelock. 1897. <em>Sexual Inversion</em>. Vol. 1 of Studies in the Psychology of Sex. London: Wilson and Macmillan.</strong><br><br>
                 Havelock Ellis presents a more sympathetic approach to homosexuality within the sexological framework, arguing that "sexual inversion" is a congenital condition rather than moral degeneracy. However, despite this progressive stance, his work remains within a medical framework, classifying homosexuals into subtypes and treating the condition as a deviation that science must explain.
-            </div>
+            </article>
 
-            <div class="bib-entry">
+            <article class="bib-entry">
                 <strong>Krafft-Ebing, Richard von. 1893. <em>Psychopathia Sexualis, with Especial Reference to Contrary Sexual Instinct: A Medico-Legal Study</em>. Translated by Charles Gilbert Chaddock. 7th enlarged and revised German edition. Philadelphia: The F. A. Davis Company.</strong><br><br>
                 Richard von Krafft-Ebing's Psychopathia Sexualis created an elaborate taxonomy of sexual deviance, framing homosexuality within degeneracy theory and linking it to hereditary taint, mental illness, and moral weakness. Through detailed case studies written partly in Latin to obscure explicit content from lay readers, Krafft-Ebing transformed intimate human experiences into psychiatric specimens. His classification system marks a decisive shift from evaluating acts to diagnosing identities, asking "what kind of person is this?" rather than "what did this person do?"
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div class="section" style="margin-top: 40px;">
-            <h3>Project Reflection</h3>
+        <section class="section" style="margin-top: 40px;" aria-labelledby="reflection-heading">
+            <h3 id="reflection-heading">Project Reflection</h3>
             <p>Creating this digital archive has given me a deep understanding of how historical contexts shape the human categories we often take for granted as natural or eternal. The juxtaposition of ancient Greek and Victorian-era materials allows us to observe what Foucault termed a "rupture in discourse": a fundamental shift not only in how we discuss sexual practices, but also in the very meaning of sexuality as a concept.</p>
             
             <p>Visual materials proved particularly powerful in concretizing this abstract theoretical argument. Seeing Greek vases openly celebrating homosexual courtship at the symposium, then juxtaposing them with Victorian diagnostic journals, revealed how the same human behavior could be understood in radically different ways. The Greeks integrated same-sex love into civic life, philosophy, and art; the Victorians viewed it as pathological, concealed it, and subjected it to medical intervention.</p>
             
-            <p>Perhaps most striking is the paradox of Victorian sexual morality: it was precisely the culture demanding propriety in sexual conduct that became obsessed with meticulously classifying and cataloging “perversions.” The emergence of sexology itself created the very categories it claimed to discover. Thus, this archive is not simply a historical study but also an invitation to examine our contemporary assumptions about identity, desire, and the categories upon which we rely to understand human experience.</p>
-        </div>
+            <p>Perhaps most striking is the paradox of Victorian sexual morality: it was precisely the culture demanding propriety in sexual conduct that became obsessed with meticulously classifying and cataloging "perversions." The emergence of sexology itself created the very categories it claimed to discover. Thus, this archive is not simply a historical study but also an invitation to examine our contemporary assumptions about identity, desire, and the categories upon which we rely to understand human experience.</p>
+        </section>
 
     </div>
 
     <footer>
         <p>© 2025 Xiaoyin Liu | CLAS4203 | Boston College</p>
     </footer>
+
+    <!-- Text-to-Speech and Accessibility JavaScript -->
+    <script src="accessibility.js"></script>
 </body>
 </html>
