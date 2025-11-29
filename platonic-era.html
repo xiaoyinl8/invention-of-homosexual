@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Platonic Era | The Invention of the Homosexual</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-accessible.css">
 </head>
 <body>
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Accessibility Controls Bar -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Accessibility controls">
+        <div class="container">
+            <button id="contrast-toggle" aria-label="Toggle high contrast mode" title="Toggle high contrast mode">
+                <span aria-hidden="true">◐</span> High Contrast
+            </button>
+            <div class="font-controls">
+                <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">A-</button>
+                <button id="reset-font" aria-label="Reset font size" title="Reset font size">A</button>
+                <button id="increase-font" aria-label="Increase font size" title="Increase font size">A+</button>
+            </div>
+            <button id="read-page-btn" aria-label="Read entire page aloud" title="Read entire page aloud">
+                <span aria-hidden="true">🔊</span> Read Page
+            </button>
+        </div>
+    </div>
+
     <header>
         <h1>The Invention of the Homosexual</h1>
         <p class="subtitle">From Platonic Eros to Medical Pathology</p>
     </header>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="platonic-era.html" class="active">The Platonic Era</a>
+        <a href="platonic-era.html" class="active" aria-current="page">The Platonic Era</a>
         <a href="victorian-era.html">The Victorian Era</a>
         <a href="essay.html">Essay & Bibliography</a>
     </nav>
 
-    <div class="container">
-        <div class="period-section">
-            <h2>The Platonic Era: Eros as Act and Philosophy</h2>
+    <div class="container" id="main-content">
+        <div class="period-section" role="article" aria-labelledby="period-heading">
+            <h2 id="period-heading">The Platonic Era: Eros as Act and Philosophy</h2>
             <p>In ancient Athens, same-sex desire between men was understood primarily through frameworks of ethics, pedagogy, and social hierarchy. The Symposium presents eros between men as a vehicle for philosophical enlightenment, a force that could elevate the soul from physical beauty to contemplation of absolute Beauty itself.</p>
             
-            <p>These relationships, particularly the culturally sanctioned practice of pederasty between adult men (erastai) and adolescent youths (eromenoi), were evaluated based on their adherence to social conventions, their role in transmitting civic virtue, and their conformity to ideals of moderation and reciprocity.</p>
+            <p>These relationships, particularly the culturally sanctioned practice of pederasty between adult men (<em lang="grc">erastai</em>) and adolescent youths (<em lang="grc">eromenoi</em>), were evaluated based on their adherence to social conventions, their role in transmitting civic virtue, and their conformity to ideals of moderation and reciprocity.</p>
             
             <p><strong>The ancient Greeks had no concept of "the homosexual" as a type of person; they recognized only acts that could be performed by any citizen, acts that were judged by their context, propriety, and social function.</strong></p>
         </div>
@@ -34,60 +54,82 @@
 
         <div class="gallery">
             <!-- Source 1 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source1-title">
                 <div class="gallery-image">
-                    <img src="images/kylix-courtship-mfa.jpg" alt="Red-figure kylix showing bearded man offering gift to youth" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/kylix-courtship-mfa.jpg" 
+                         alt="Ancient Greek red-figure pottery kylix from 460 BCE depicting a courtship scene. A bearded older man, the erastes, extends his hand offering a gift to a younger beardless youth, the eromenos, illustrating the classical pederastic relationship with strict social codes of honor and dignity"
+                         role="img">
                 </div>
                 <div class="gallery-content">
-                    <h4>Red-Figure Kylix with Courtship Scene</h4>
+                    <h4 id="source1-title">Red-Figure Kylix with Courtship Scene</h4>
                     <p class="meta-info">Greek Pottery | c. 460 BCE | Boston Museum of Fine Arts, Acc. No. 10.181</p>
-                    <a href="https://collections.mfa.org/objects/153726/drinking-cup-kylix-depicting-victorious-athletes-and-judge?ctx=1c313573-bf56-4ca2-aac9-e35dc55634ee&idx=0" target="_blank" rel="noopener noreferrer" class="source-link">
+                    <a href="https://collections.mfa.org/objects/153726/drinking-cup-kylix-depicting-victorious-athletes-and-judge" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="source-link"
+                       aria-label="View Red-Figure Kylix at Museum of Fine Arts Boston website">
                         View at Museum Website →
                     </a>
-                    <p>This red-figure kylix depicts a classic scene of Greek pederastic courtship. A bearded, older man (the <em>erastes</em>) offers a gift to a younger, beardless youth (the <em>eromenos</em>), a visual convention that follows strict social codes. The suitor demonstrates his honorable intentions through the gift, while the beloved maintains his dignity through a reserved posture.</p>
-                    <p>Crucially, this intimate scene decorates a drinking cup used at symposia, indicating these relationships were openly celebrated within elite male social life. As Kenneth Dover’s analysis confirms, such imagery shows that same-sex desire was framed through social roles and regulated behavior. It was judged by its context and propriety, not as an identity that defined a person’s fundamental nature. This was an accepted social practice, not a category of being.</p>
-                    
+                    <p>This red-figure kylix depicts a classic scene of Greek pederastic courtship. A bearded, older man (the <em lang="grc">erastes</em>) offers a gift to a younger, beardless youth (the <em lang="grc">eromenos</em>), a visual convention that follows strict social codes. The suitor demonstrates his honorable intentions through the gift, while the beloved maintains his dignity through a reserved posture.</p>
+                    <p>Crucially, this intimate scene decorates a drinking cup used at symposia, indicating these relationships were openly celebrated within elite male social life. As Kenneth Dover's analysis confirms, such imagery shows that same-sex desire was framed through social roles and regulated behavior. It was judged by its context and propriety, not as an identity that defined a person's fundamental nature. This was an accepted social practice, not a category of being.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
             
             <!-- Source 2 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source2-title">
                 <div class="gallery-image">
-                    <img src="images/kylix-symposium-mfa.jpg" alt="Red-figure kylix showing two men reclining at symposium with lyre" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/kylix-symposium-mfa.jpg" 
+                         alt="Ancient Greek red-figure kylix from 480 BCE showing two men reclining together on a dining couch at a symposium, with a lyre visible, depicting the intimate setting where music, poetry, intellectual discourse, and erotic attraction intermixed at elite male gatherings"
+                         role="img">
                 </div>
                 <div class="gallery-content">
-                    <h4>Red-Figure Kylix Depicting Scenes from a Symposium</h4>
+                    <h4 id="source2-title">Red-Figure Kylix Depicting Scenes from a Symposium</h4>
                     <p class="meta-info">Greek Pottery | c. 480 BCE | Boston Museum of Fine Arts, Acc. No. 01.8034</p>
-                    <a href="https://collections.mfa.org/objects/153705/drinking-cup-kylix-depicting-scenes-from-a-symposium?ctx=ef57513f-dcf8-4678-b18c-1681e22fe7f3&idx=0" target="_blank" rel="noopener noreferrer" class="source-link">
+                    <a href="https://collections.mfa.org/objects/153705/drinking-cup-kylix-depicting-scenes-from-a-symposium" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="source-link"
+                       aria-label="View Symposium Kylix at Museum of Fine Arts Boston website">
                         View at Museum Website →
                     </a>
                     <p>This red-figure kylix from the Boston Museum of Fine Arts captures the intimate symposium scene, depicting two men reclining together on a dining couch in the characteristic posture of symposiasts. The scene illustrates how music, poetry, intellectual discourse, and erotic attraction intermixed at these elite male gatherings.</p>
                     <p>The symposium was the central setting for Plato's famous dialogue on Eros, and this visual evidence confirms the textual accounts: these were spaces where relationships between men flourished openly. Dover emphasizes that symposium vessels like this kylix were not merely decorative but reflected actual social practices, used at the very gatherings they depicted. The scene demonstrates same-sex eros as contextual behavior embedded in specific institutional settings—the elite drinking party where knowledge was transmitted, political alliances formed, and erotic bonds cultivated.</p>
-                    
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 3 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source3-title">
                 <div class="gallery-image">
-                    <img src="images/warren-cup.jpg" alt="Roman Warren Cup depicting male-male erotic scenes">
+                    <img src="images/warren-cup.jpg" 
+                         alt="Roman Warren Cup from 15 BCE, a silver drinking vessel depicting explicit scenes of male-male intimacy rendered with technical refinement, showing adult male bodies in erotic contexts without pedagogical framing">
                 </div>
                 <div class="gallery-content">
-                    <h4>Roman Warren Cup</h4>
+                    <h4 id="source3-title">Roman Warren Cup</h4>
                     <p class="meta-info">Artifact | c. 15 BC | British Museum, Museum No. 1999,0426.1</p>
-                    <a href="https://www.britishmuseum.org/collection/object/G_1999-0426-1" target="_blank" rel="noopener noreferrer" class="source-link">
+                    <a href="https://www.britishmuseum.org/collection/object/G_1999-0426-1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="source-link"
+                       aria-label="View Warren Cup at British Museum website">
                         View at Museum Website →
                     </a>
                     <p>The Warren Cup depicts explicit male-male intercourse rendered with remarkable technical refinement. Unlike Greek pederastic courtship scenes, the Roman imagery eroticizes adult male bodies and presents intimacy without pedagogical framing or moral commentary. The scenes illustrate continuity of same-sex acts across antiquity while highlighting the absence of identity-based categories: Roman culture did not classify participants as deviant, but integrated such imagery into elite dining and social display.</p>
-                    <p>This object stands in sharp contrast to philosophical works like Plato’s Symposium, which sought to channel erotic desire toward transcendent virtue. Instead, the Warren Cup frames same-sex acts simply as aspects of pleasure and daily experience. Its very existence underscores a key distinction: classical antiquity acknowledged a wide spectrum of sexual behaviors without categorizing individuals into fixed identities, a conceptual framework that would only emerge centuries later.</p>
-                    
+                    <p>This object stands in sharp contrast to philosophical works like Plato's Symposium, which sought to channel erotic desire toward transcendent virtue. Instead, the Warren Cup frames same-sex acts simply as aspects of pleasure and daily experience. Its very existence underscores a key distinction: classical antiquity acknowledged a wide spectrum of sexual behaviors without categorizing individuals into fixed identities, a conceptual framework that would only emerge centuries later.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 4 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source4-title">
                 <div class="gallery-image">
-                    <!-- Use manuscript image or classical relief -->
                     <div class="image-placeholder">
                         <strong>Plato's <em>Symposium</em></strong>
                         <p>Speech of Pausanias</p>
@@ -95,32 +137,37 @@
                     </div>
                 </div>
                 <div class="gallery-content">
-                    <h4>Excerpt from Plato's <em>Symposium</em> (Pausanias's Speech)</h4>
+                    <h4 id="source4-title">Excerpt from Plato's <em>Symposium</em> (Pausanias's Speech)</h4>
                     <p class="meta-info">Classical Text | 4th century BCE</p>
-                    <p>In his speech from Plato’s <em>Symposium</em>, Pausanias distinguishes between a “Common Love,” focused on physical pleasure, and a “Heavenly Love,” which directs desire toward virtue and intellectual growth. He argues that relationships between men are superior when they foster moral and civic excellence.</p>
-                    <p>This framework evaluates love solely by its ethical purpose and the conduct it inspires, not by the gender of the participants. The beloved’s gender is secondary to the relationship’s capacity to guide the soul toward the good. This passage exemplifies a classical worldview that had no concept of sexual orientation. It provides a direct philosophical contrast to the 19th-century model, which would later anchor desire to an innate, identity-defining condition rather than to ethical striving.</p>
+                    <p>In his speech from Plato's <em>Symposium</em>, Pausanias distinguishes between a "Common Love," focused on physical pleasure, and a "Heavenly Love," which directs desire toward virtue and intellectual growth. He argues that relationships between men are superior when they foster moral and civic excellence.</p>
+                    <p>This framework evaluates love solely by its ethical purpose and the conduct it inspires, not by the gender of the participants. The beloved's gender is secondary to the relationship's capacity to guide the soul toward the good. This passage exemplifies a classical worldview that had no concept of sexual orientation. It provides a direct philosophical contrast to the 19th-century model, which would later anchor desire to an innate, identity-defining condition rather than to ethical striving.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 5 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source5-title">
                 <div class="gallery-image">
-                    <!-- Use manuscript image or classical relief -->
                     <div class="image-placeholder">
                         <strong>Plato's <em>Laws</em></strong>
                         <p>4th century BCE</p>
                     </div>
                 </div>
                 <div class="gallery-content">
-                    <h4>Excerpt from Plato’s <em>Laws</em>, Book 8</h4>
+                    <h4 id="source5-title">Excerpt from Plato's <em>Laws</em>, Book 8</h4>
                     <p class="meta-info">Classical Text | 4th century BCE</p>
-                    <p>In <em>Laws</em>, Plato condemns physical intimacy between men as “contrary to nature” and a failure of self-mastery that should be outlawed. This legalistic perspective starkly contrasts with the philosophical praise found in his <em>Symposium</em>.</p>
-                    <p>However, even in this censure, the focus remains on governing specific acts deemed detrimental to the city’s social and procreative order. Plato frames the issue as one of vice and unlawful behavior, not as a symptom of a distinct type of person. This highlights a crucial distinction: classical thought, whether celebrating or condemning, evaluated sexual conduct through ethical and civic lenses. It operated without the modern concept of a fixed sexual identity, which would later redefine such desires as the core of a person’s being.</p>
+                    <p>In <em>Laws</em>, Plato condemns physical intimacy between men as "contrary to nature" and a failure of self-mastery that should be outlawed. This legalistic perspective starkly contrasts with the philosophical praise found in his <em>Symposium</em>.</p>
+                    <p>However, even in this censure, the focus remains on governing specific acts deemed detrimental to the city's social and procreative order. Plato frames the issue as one of vice and unlawful behavior, not as a symptom of a distinct type of person. This highlights a crucial distinction: classical thought, whether celebrating or condemning, evaluated sexual conduct through ethical and civic lenses. It operated without the modern concept of a fixed sexual identity, which would later redefine such desires as the core of a person's being.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 6 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source6-title">
                 <div class="gallery-image">
                     <div class="image-placeholder">
                         <strong><em>Greek Homosexuality</em></strong>
@@ -129,12 +176,15 @@
                     </div>
                 </div>
                 <div class="gallery-content">
-                    <h4>Kenneth Dover's <em>Greek Homosexuality</em>: Scholarly Analysis</h4>
+                    <h4 id="source6-title">Kenneth Dover's <em>Greek Homosexuality</em>: Scholarly Analysis</h4>
                     <p class="meta-info">Historical Analysis | 1978</p>
-                    <p>Kenneth Dover’s analysis reveals that Greek same-sex relations were structured by social conventions, not personal identity. His study of art and literature shows that the culturally sanctioned practice of pederasty followed a strict code of conduct between the older erastes (lover) and the younger eromenos (beloved), governed by ideals of honor and civic virtue.</p>
-                    <p>Dover confirms that the Greeks had no concept of a fixed sexual orientation. A man’s participation in these relationships was a temporary social role, entirely compatible with later marriage and fatherhood. These were context-dependent behaviors judged by their adherence to social norms, not expressions of an innate identity. His work thus provides critical evidence that same-sex acts pre-dated the modern invention of “the homosexual” as a distinct category of person.</p>
+                    <p>Kenneth Dover's analysis reveals that Greek same-sex relations were structured by social conventions, not personal identity. His study of art and literature shows that the culturally sanctioned practice of pederasty followed a strict code of conduct between the older <em lang="grc">erastes</em> (lover) and the younger <em lang="grc">eromenos</em> (beloved), governed by ideals of honor and civic virtue.</p>
+                    <p>Dover confirms that the Greeks had no concept of a fixed sexual orientation. A man's participation in these relationships was a temporary social role, entirely compatible with later marriage and fatherhood. These were context-dependent behaviors judged by their adherence to social norms, not expressions of an innate identity. His work thus provides critical evidence that same-sex acts pre-dated the modern invention of "the homosexual" as a distinct category of person.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
         </div>
 
         <div class="section" style="margin-top: 60px;">
@@ -152,5 +202,8 @@
     <footer>
         <p>© 2025 Xiaoyin Liu | CLAS4203 | Boston College</p>
     </footer>
+
+    <!-- Text-to-Speech and Accessibility JavaScript -->
+    <script src="accessibility.js"></script>
 </body>
 </html>
