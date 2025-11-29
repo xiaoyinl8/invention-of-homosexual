@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Victorian Era | The Invention of the Homosexual</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-accessible.css">
 </head>
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Accessibility Controls Bar -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Accessibility controls">
+        <div class="container">
+            <button id="contrast-toggle" aria-label="Toggle high contrast mode" title="Toggle high contrast mode">
+                <span aria-hidden="true">◐</span> High Contrast
+            </button>
+            <div class="font-controls">
+                <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">A-</button>
+                <button id="reset-font" aria-label="Reset font size" title="Reset font size">A</button>
+                <button id="increase-font" aria-label="Increase font size" title="Increase font size">A+</button>
+            </div>
+            <button id="read-page-btn" aria-label="Read entire page aloud" title="Read entire page aloud">
+                <span aria-hidden="true">🔊</span> Read Page
+            </button>
+        </div>
+    </div>
+
     <header>
         <h1>The Invention of the Homosexual</h1>
         <p class="subtitle">From Platonic Eros to Medical Pathology</p>
     </header>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="platonic-era.html">The Platonic Era</a>
-        <a href="victorian-era.html" class="active">The Victorian Era</a>
+        <a href="victorian-era.html" class="active" aria-current="page">The Victorian Era</a>
         <a href="essay.html">Essay & Bibliography</a>
     </nav>
 
-    <div class="container">
-        <div class="period-section victorian-period">
-            <h2>The Victorian Era: From Acts to Identities</h2>
+    <div class="container" id="main-content">
+        <div class="period-section victorian-period" role="article" aria-labelledby="period-heading">
+            <h2 id="period-heading">The Victorian Era: From Acts to Identities</h2>
             <p>The late 19th century witnessed a radical transformation in the Western understanding of same-sex desire. Emerging medical and psychiatric discourses reconceptualized what had been understood as acts into the defining characteristics of a new human type: "the homosexual."</p>
             
             <p>Michel Foucault identified this moment as marking the "birth" of the modern homosexual, arguing that what had once been understood as the sin of sodomy—a prohibited act that anyone might commit—was transformed into homosexuality, a psychological condition that revealed one's deepest identity.</p>
@@ -34,48 +54,63 @@
         
         <!-- Source 7 -->
         <div class="gallery">
-            <div class="gallery-item" style="box-shadow: 0 8px 40px rgba(0,0,0,0.15);">
+            <article class="gallery-item" style="box-shadow: 0 8px 40px rgba(0,0,0,0.15);" role="article" aria-labelledby="source7-title">
                 <div class="gallery-image">
-                    <img src="images/foucault-portrait-header.jpg" alt="Foucault quote: The sodomite had been a temporary aberration; the homosexual was now a species">
+                    <img src="images/foucault-portrait-header.jpg" 
+                         alt="Portrait header with Michel Foucault's quote: The sodomite had been a temporary aberration; the homosexual was now a species"
+                         role="img">
                 </div>
                 <div class="gallery-content">
-                    <h4>Foucault's <em>History of Sexuality: The Birth of the Homosexual</em></h4>
+                    <h4 id="source7-title">Foucault's <em>History of Sexuality: The Birth of the Homosexual</em></h4>
                     <p class="meta-info">Theoretical Text | 1976 (English 1978)</p>
-                    <p>Michel Foucault argues that sexuality is not a natural category but a historical construct produced by 19th-century medical and psychiatric discourses. His central claim: the modern “homosexual” did not exist before these expert systems created it. As Foucault famously writes: “The sodomite had been a temporary aberration; the homosexual was now a species.” What had been acts anyone might commit became the defining characteristic of a particular type of person.</p>
-                    <p>Foucault traces how medical science transformed sodomy from a forbidden act into homosexuality, a psychological condition embedded in one’s entire being. “The nineteenth-century homosexual became a personage, a past, a case history, and a childhood... Nothing that went into his total composition was unaffected by his sexuality.” This shift represents a fundamental transformation in power: no longer merely prohibiting acts, but producing and classifying subjects. Foucault’s analysis provides the theoretical framework for understanding the rupture this archive documents—the moment when “what you do” became “who you are.”</p>
+                    <p>Michel Foucault argues that sexuality is not a natural category but a historical construct produced by 19th-century medical and psychiatric discourses. His central claim: the modern "homosexual" did not exist before these expert systems created it. As Foucault famously writes: "The sodomite had been a temporary aberration; the homosexual was now a species." What had been acts anyone might commit became the defining characteristic of a particular type of person.</p>
+                    <p>Foucault traces how medical science transformed sodomy from a forbidden act into homosexuality, a psychological condition embedded in one's entire being. "The nineteenth-century homosexual became a personage, a past, a case history, and a childhood... Nothing that went into his total composition was unaffected by his sexuality." This shift represents a fundamental transformation in power: no longer merely prohibiting acts, but producing and classifying subjects. Foucault's analysis provides the theoretical framework for understanding the rupture this archive documents—the moment when "what you do" became "who you are."</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
         </div>
 
         <div class="gallery">
             <!-- Source 8 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source8-title">
                 <div class="gallery-image">
-                    <img src="images/ellis-sexual-inversion.jpg" alt="Photographic portrait of Havelock Ellis">
+                    <img src="images/ellis-sexual-inversion.jpg" 
+                         alt="Photographic portrait of Havelock Ellis, British physician and sexologist from around 1900"
+                         role="img">
                 </div>
                 <div class="gallery-content">
-                    <h4>Havelock Ellis: Sympathetic Classification</h4>
+                    <h4 id="source8-title">Havelock Ellis: Sympathetic Classification</h4>
                     <p class="meta-info">Photograph & Sexological Text | c. 1900</p>
-                    <p>Havelock Ellis’s <em>Sexual Inversion</em> aimed to destigmatize same-sex desire by reclassifying it as a congenital “inversion,” not a moral failing. Using detailed case studies and typologies, he presented himself as a scientific authority whose work could objectively explain human sexuality.</p>
-                    <p>Despite his sympathetic intent, Ellis’s methodology reinforced the very identity category he sought to normalize. By cataloging physical and psychological traits, he solidified the notion of the “invert” as a distinct type of person, defined by an innate, all-pervading characteristic. This created a central paradox: his defense relied on medicalizing homosexuality, thereby completing the historical shift from judging transient acts to diagnosing a fixed identity.</p>
+                    <p>Havelock Ellis's <em>Sexual Inversion</em> aimed to destigmatize same-sex desire by reclassifying it as a congenital "inversion," not a moral failing. Using detailed case studies and typologies, he presented himself as a scientific authority whose work could objectively explain human sexuality.</p>
+                    <p>Despite his sympathetic intent, Ellis's methodology reinforced the very identity category he sought to normalize. By cataloging physical and psychological traits, he solidified the notion of the "invert" as a distinct type of person, defined by an innate, all-pervading characteristic. This created a central paradox: his defense relied on medicalizing homosexuality, thereby completing the historical shift from judging transient acts to diagnosing a fixed identity.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 9 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source9-title">
                 <div class="gallery-image">
-                    <img src="images/freud-psychosexual-chart.jpg" alt="Freud's psychosexual development diagram">
+                    <img src="images/freud-psychosexual-chart.jpg" 
+                         alt="Diagram showing Freud's psychosexual development stages from childhood to adulthood"
+                         role="img">
                 </div>
                 <div class="gallery-content">
-                    <h4>Freud's Psychosexual Development: Identity as Childhood Destiny</h4>
+                    <h4 id="source9-title">Freud's Psychosexual Development: Identity as Childhood Destiny</h4>
                     <p class="meta-info">Scientific Flowchart | 1905</p>
-                    <p>Sigmund Freud’s <em>Three Essays on the Theory of Sexuality</em> fundamentally linked sexuality to the formation of the self. His model of psychosexual development traced adult sexuality—including homosexuality—to childhood experiences and the navigation of the Oedipal complex. He framed same-sex desire not as a sin, but as a divergence in psychosexual development, an “arrest” that shaped one's fundamental identity.</p>
-                    <p>This psychoanalytic approach completed the medicalization of desire. By rooting sexual object choice in early childhood, Freud established sexuality as a deep-seated, identity-defining core. The central question was transformed from an ethical one—“What did you do?”—to a diagnostic one: “What early experiences made you this way?” This solidified the modern concept of the homosexual as a distinct psychological type.</p>
+                    <p>Sigmund Freud's <em>Three Essays on the Theory of Sexuality</em> fundamentally linked sexuality to the formation of the self. His model of psychosexual development traced adult sexuality—including homosexuality—to childhood experiences and the navigation of the Oedipal complex. He framed same-sex desire not as a sin, but as a divergence in psychosexual development, an "arrest" that shaped one's fundamental identity.</p>
+                    <p>This psychoanalytic approach completed the medicalization of desire. By rooting sexual object choice in early childhood, Freud established sexuality as a deep-seated, identity-defining core. The central question was transformed from an ethical one—"What did you do?"—to a diagnostic one: "What early experiences made you this way?" This solidified the modern concept of the homosexual as a distinct psychological type.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
             <!-- Source 10 -->
-            <div class="gallery-item">
+            <article class="gallery-item" role="article" aria-labelledby="source10-title">
                 <div class="gallery-image">
                     <div class="image-placeholder">
                         <strong><em>Psychopathia Sexualis</em></strong>
@@ -84,12 +119,15 @@
                     </div>
                 </div>
                 <div class="gallery-content">
-                    <h4>Case 125: Dr. G. - A Case Study of Resistance</h4>
+                    <h4 id="source10-title">Case 125: Dr. G. - A Case Study of Resistance</h4>
                     <p class="meta-info">Medical Text | 1893 (7th Edition)</p>
-                    <p>In a case from <em>Psychopathia Sexualis</em>, Richard von Krafft-Ebing documents “Dr. G.,” a patient who confidently rejects the label of sickness, citing Plato and describing his same-sex love as a “higher, ideal” form of affection. Krafft-Ebing’s response reveals the coercive nature of the new sexological authority: he diagnoses Dr. G.’s very defiance as proof of a deeper pathology, labeling him a “congenitally abnormal” “paranoiac” with an “ethical defect.” This case exposes the power struggle at the heart of sexological classification: when medical authority encounters a subject who will not submit to the disease model, the physician must either abandon his framework or pathologize resistance itself. Krafft-Ebing chose the latter.</p>
-                    <p>This encounter exposes the foundational logic of 19th-century sexology. Where ancient thought evaluated the social context of specific acts, Krafft-Ebing’s system diagnosed types of people. His elaborate taxonomy, rooted in degeneracy theory, linked homosexuality to hereditary taint and mental illness. The central question was transformed from the ethical “What did this person do?” to the diagnostic “What kind of person is this?” In this power struggle, the subject’s refusal to be pathologized was itself used as evidence to complete the diagnosis, cementing the modern concept of the homosexual as a distinct and deviant identity.</p>
+                    <p>In a case from <em>Psychopathia Sexualis</em>, Richard von Krafft-Ebing documents "Dr. G.," a patient who confidently rejects the label of sickness, citing Plato and describing his same-sex love as a "higher, ideal" form of affection. Krafft-Ebing's response reveals the coercive nature of the new sexological authority: he diagnoses Dr. G.'s very defiance as proof of a deeper pathology, labeling him a "congenitally abnormal" "paranoiac" with an "ethical defect." This case exposes the power struggle at the heart of sexological classification: when medical authority encounters a subject who will not submit to the disease model, the physician must either abandon his framework or pathologize resistance itself. Krafft-Ebing chose the latter.</p>
+                    <p>This encounter exposes the foundational logic of 19th-century sexology. Where ancient thought evaluated the social context of specific acts, Krafft-Ebing's system diagnosed types of people. His elaborate taxonomy, rooted in degeneracy theory, linked homosexuality to hereditary taint and mental illness. The central question was transformed from the ethical "What did this person do?" to the diagnostic "What kind of person is this?" In this power struggle, the subject's refusal to be pathologized was itself used as evidence to complete the diagnosis, cementing the modern concept of the homosexual as a distinct and deviant identity.</p>
+                    <button class="read-aloud-btn" aria-label="Read this source description aloud">
+                        <span aria-hidden="true">🔊</span> Read Aloud
+                    </button>
                 </div>
-            </div>
+            </article>
 
         </div>
 
@@ -112,5 +150,8 @@
     <footer>
         <p>© 2025 Xiaoyin Liu | CLAS4203 | Boston College</p>
     </footer>
+
+    <!-- Text-to-Speech and Accessibility JavaScript -->
+    <script src="accessibility.js"></script>
 </body>
 </html>
