@@ -227,6 +227,57 @@ html {
     border-top: 2px solid #fff !important;
 }
 
+/* High contrast fixes for question sections */
+.high-contrast .section div[style*="background: linear-gradient"],
+.high-contrast .section div[style*="background: rgba"] {
+    background: #1a1a1a !important;
+}
+
+.high-contrast .section ul li {
+    border-left-color: #ffd700 !important;
+}
+
+.high-contrast .section ul li span {
+    color: #ccc !important;
+}
+
+.high-contrast .section div[style*="border-left"] {
+    border-left-color: #fff !important;
+}
+
+/* Fix for the navigation cards on homepage */
+.high-contrast section div[style*="background: white"] {
+    background: #1a1a1a !important;
+    border: 2px solid #fff !important;
+}
+
+.high-contrast section div[style*="padding: 35px"] h3 {
+    color: #fff !important;
+}
+
+.high-contrast section div[style*="padding: 35px"] p {
+    color: #fff !important;
+}
+
+.high-contrast section div[style*="padding: 35px"] li {
+    color: #fff !important;
+    border-left-color: #ffd700 !important;
+}
+
+.high-contrast section div[style*="padding: 35px"] li span {
+    color: #ccc !important;
+}
+
+.high-contrast section div[style*="padding: 35px"] a {
+    color: #ffff00 !important;
+}
+
+/* Fix for "The Central Shift" box */
+.high-contrast section div[style*="background: rgba(255,255,255,0.7)"] {
+    background: #2a2a2a !important;
+    border: 2px solid #fff !important;
+}
+
 .high-contrast h1,
 .high-contrast h2,
 .high-contrast h3,
